@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+@layer components {
+  .heading-2 {
+    @apply text-4xl md:text-5xl text-primary;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .heading-3 {
+    @apply text-primary text-xl lg:text-2xl capitalize font-bold;
+  }
+
+  .para {
+    @apply text-para text-sm md:text-base font-normal;
+  }
+
+  .btn-primary {
+    @apply text-white text-sm md:text-base bg-gradient-to-b from-[#A4BC46] to-[#85A019] py-2 px-3 md:py-4 md:px-8 rounded-lg flex gap-1.5 items-center;
+  }
+}
+
+@layer utilities {
+  .primary-shadow {
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+}
